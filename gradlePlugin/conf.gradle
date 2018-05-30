@@ -1,0 +1,24 @@
+ext {
+    bintrayRepo = 'AndroidMaven'
+    bintrayName = 'gradle-plugin-demo'
+
+    publishedGroupId = 'com.plugin.guild'
+    libraryName = 'gradlePlugin'
+    artifact = 'gradlePlugin'
+
+    libraryDescription = 'A demo for how to implement gradle plugin demo'
+
+    siteUrl = 'https://github.com/Visualrainy/GradlePluginDemo'
+    issueUrl = 'https://github.com/Visualrainy/GradlePluginDemo/issues'
+    gitUrl = 'https://github.com/Visualrainy/GradlePluginDemo'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'visualrainy'
+    developerName = 'Peng Chen'
+    developerEmail = 'visualrainy@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
