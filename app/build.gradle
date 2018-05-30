@@ -14,7 +14,7 @@ class GradlePlugin implements Plugin<Project> {
 
             def closure = target['gradlePluginConf'].testMap
             def result = closure('Peng')
-            println 'result is ' + result
+            println "result is ${result}"
             println target['gradlePluginConf'].url
         }
     }
@@ -24,7 +24,7 @@ apply plugin: GradlePlugin
 
 //gradlePluginConf {
 //    testMap { name ->
-//        println 'hello ' + name
+//        println "hello ${name}"
 //        return name
 //    }
 //
@@ -33,7 +33,7 @@ apply plugin: GradlePlugin
 
 gradlePluginConf {
     testMap {
-        println 'hello ' + it
+        println "hello ${it}"
         return it
     }
     url 'https://github.com/Visualrainy/GradlePluginDemo.git'
