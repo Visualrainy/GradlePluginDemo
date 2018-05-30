@@ -1,3 +1,45 @@
+class GradlePluginExtensions {
+    Closure testMap
+    String url
+}
+
+class GradlePlugin implements Plugin<Project> {
+
+    @Override
+    void apply(Project target) {
+        target.extensions.create('gradlePluginConf', GradlePluginExtensions)
+
+        target.task('gradlePluginDemo') doLast {
+            println 'hello world!!!'
+
+            def closure = target['gradlePluginConf'].testMap
+            def result = closure('Peng')
+            println 'result is ' + result
+            println target['gradlePluginConf'].url
+        }
+    }
+}
+
+apply plugin: GradlePlugin
+
+//gradlePluginConf {
+//    testMap { name ->
+//        println 'hello ' + name
+//        return name
+//    }
+//
+//    url 'https://github.com/Visualrainy/GradlePluginDemo.git1'
+//}
+
+gradlePluginConf {
+    testMap {
+        println 'hello ' + it
+        return it
+    }
+    url 'https://github.com/Visualrainy/GradlePluginDemo.git'
+}
+
+
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
