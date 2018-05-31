@@ -12,7 +12,7 @@ ext {
     issueUrl = 'https://github.com/Visualrainy/GradlePluginDemo/issues'
     gitUrl = 'https://github.com/Visualrainy/GradlePluginDemo'
 
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.4'
 
     developerId = 'visualrainy'
     developerName = 'Peng Chen'
