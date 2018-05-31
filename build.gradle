@@ -8,9 +8,9 @@ buildscript {
 //        maven {
 //            url: url('./localRepo')
 //        }
-        maven {
-            url 'https://dl.bintray.com/visualrainy/AndroidMaven'
-        }
+//        maven {
+//            url 'https://dl.bintray.com/visualrainy/AndroidMaven'
+//        }
     }
     dependencies {
         classpath 'com.plugin.guild:gradlePlugin:1.0.0'
